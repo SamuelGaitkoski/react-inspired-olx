@@ -1,38 +1,17 @@
-.App {
-  text-align: center;
+/* agora nele aplicamos algumas configurações padrão para retirar a estilização padrão dos navegadores */
+
+/* importando uma fonte que vamos usar em todo nosso projeto */
+/* importando o peso de fonte 400 (normal) e 700 (negrito/bold) */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+* {
+    /* o box-sizing border box facilita nossa vida na criação dos nossos layouts */
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body {
+    margin: 0;
+    /* vamos usar a fonte que importamos aqui, a fonte padrão que usaremos é o Open Sans, e caso não tenha ou de algum problema vamos usar a sans-serif */
+    font-family: 'Open Sans', sans-serif;
+    background-color: #EEE;
 }
